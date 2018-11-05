@@ -1,11 +1,11 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 require 'api_config.php';
-/*
+
 if(isset($_GET['password'])){
 
     if(checKey($_GET['password'],$site) == true) {
-*/
+
        if(isset($_GET['hexa']) AND isset($_GET['discordid'])) {
             $array = Array();
 
@@ -72,14 +72,16 @@ if(isset($_GET['password'])){
 
         }
 
-/*
+
     }else {
         $msg = "API - Le mot de passe est incorrect";
+        $success = false;
     }
 } else {
     $msg = "API - Il manque des informations";
+    $success = false;
 }
-*/
+
 basic_reponse_json($success, $data, $msg);
 
 //https://gta-fivelife.fr/api/players.php?password=966316cc3b1cfe80a78a796046391dff
