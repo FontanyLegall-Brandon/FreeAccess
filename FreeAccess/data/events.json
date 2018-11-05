@@ -1,1 +1,1 @@
-[null]
+[null,{"name":"init","temp":"","event-type":"1","actions":[{"gameName":":help | Glen (alias Scarface06)","gameLink":"","name":"Set Bot Game"},{"channel":"2","varName":"","info":"0","storage":"2","varName2":"channel","name":"Store Channel Info"},{"channel":"2","varName":"","info":"0","storage":"2","varName2":"logger","name":"Store Channel Info"},{"storage":"2","varName":"status","changeType":"0","value":"1","name":"Control Variable"}]}]
