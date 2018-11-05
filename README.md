@@ -8,10 +8,11 @@ Robot Discord [FiveLife](https://gta-fivelife.fr) permettant l'accès au serveur
 
 # Commandes
 
-| help | permet d'avoir la liste des commandes  |
+| **Commande** | **Description**  |
+|--|--|
+| Help | Permet d'afficher les différentes commandes disponibles |
 |--|--|
 |  |  |
-
 
 # Versions
 
