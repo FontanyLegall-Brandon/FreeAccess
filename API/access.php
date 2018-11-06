@@ -21,7 +21,7 @@ if(isset($_GET['password'])){
                 if ($userdata==null) {
                     $data = $array;
                     $msg = "Vous devez vous vous connecter sur notre site au moins une fois";
-                    $success = 0;
+                    $success = 1;
 
                 }else {
                     if ($userdata['ban'] == 0) {
@@ -45,12 +45,12 @@ if(isset($_GET['password'])){
 
                             $data = $array;
                             $msg = "Bienvenue !";
-                            $success = 1;
+                            $success = 3;
 
                         }else{
                             $data = $array;
                             $msg = "Vous êtes actuellement déjà whitelist";
-                            $success = 0;
+                            $success = 1;
                         }
 
 
@@ -68,7 +68,7 @@ if(isset($_GET['password'])){
             {
                 $data = $array;
                 $msg = "Merci de bien vouloir rentrer un Steam Hexa valide du type steam:AAAAAAAAAAAAAAA";
-                $success = 0;
+                $success = 1;
             }
 
         }
