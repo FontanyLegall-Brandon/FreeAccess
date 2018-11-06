@@ -31,9 +31,9 @@ if(isset($_GET['password'])){
                         $bddwhitelist = $stmt->fetch();
 
                         if($bddwhitelist['identifier'] == null) {
-                            /*$stmt = $serveur->prepare("INSERT INTO user_whitelist(nom_rp, identifier) VALUES (?, ?)");
+                            $stmt = $serveur->prepare("INSERT INTO user_whitelist(nom_rp, identifier) VALUES (?, ?)");
                             $bddsteamid = $stmt->execute(array($userdata['name'], $userdata['hexa']));
-*/
+
                             $query = $site->prepare('UPDATE user SET discordid = ? WHERE id = ?');
                             $query->execute(array($_GET['discordid'], $userdata['id']));
 
