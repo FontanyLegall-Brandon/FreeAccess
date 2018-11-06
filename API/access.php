@@ -1,6 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 require 'api_config.php';
+//966316cc3b1cfe80bota796046391dff
 
 if(isset($_GET['password'])){
 
@@ -20,7 +21,7 @@ if(isset($_GET['password'])){
                 if ($userdata==null) {
                     $data = $array;
                     $msg = "Vous devez vous vous connecter sur notre site au moins une fois";
-                    $success = false;
+                    $success = 0;
 
                 }else {
                     if ($userdata['ban'] == 0) {
@@ -44,12 +45,12 @@ if(isset($_GET['password'])){
 
                             $data = $array;
                             $msg = "Bienvenue !";
-                            $success = true;
+                            $success = 1;
 
                         }else{
                             $data = $array;
                             $msg = "Vous êtes actuellement déjà whitelist";
-                            $success = false;
+                            $success = 0;
                         }
 
 
@@ -58,7 +59,7 @@ if(isset($_GET['password'])){
                     } else {
                         $data = $array;
                         $msg = "Vous êtes actuellement ban";
-                        $success = false;
+                        $success = 2;
                     }
                 }
 
@@ -67,7 +68,7 @@ if(isset($_GET['password'])){
             {
                 $data = $array;
                 $msg = "Merci de bien vouloir rentrer un Steam Hexa valide du type steam:AAAAAAAAAAAAAAA";
-                $success = false;
+                $success = 0;
             }
 
         }
@@ -75,11 +76,11 @@ if(isset($_GET['password'])){
 
     }else {
         $msg = "API - Le mot de passe est incorrect";
-        $success = false;
+        $success = 0;
     }
 } else {
     $msg = "API - Il manque des informations";
-    $success = false;
+    $success = 0;
 }
 
 basic_reponse_json($success, $data, $msg);
