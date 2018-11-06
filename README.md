@@ -8,6 +8,7 @@ Robot Discord [FiveLife](https://gta-fivelife.fr) permettant l'accès au serveur
 # Commandes
 
 | **Commande** | **Description**  |
+|--|--|
 | +Help | Permet d'afficher les différentes commandes disponibles |
 | +join [steamhexa] | Joindre le serveur |
 | +set <#channel> | Definir le channel de recrutement |
