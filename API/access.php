@@ -10,7 +10,7 @@ if(isset($_GET['password'])){
        if(isset($_GET['hexa']) AND isset($_GET['discordid'])) {
             $array = Array();
 
-            if (preg_match('/steam:[a-zA-Z0-9]{15}/', $_GET['hexa']))
+            if (preg_match('/steam:[a-z0-9]{15}/', $_GET['hexa']))
             {
                 $reponse = $site->query('SELECT * FROM user WHERE hexa="' . $_GET['hexa'] . '"');
                 $userdata = $reponse->fetch();
