@@ -22,9 +22,9 @@
 
 <p align="center">
   <a href="#version">Version</a> •
-  <a href="#installation">Install</a> •
+  <a href="#installation">Installation</a> •
   <a href="#features">Features</a> •
-  <a href="#commandes">Commands</a> •
+  <a href="#commandes">Commandes</a> •
   <a href="#preview">Preview</a>
 </p>
 
